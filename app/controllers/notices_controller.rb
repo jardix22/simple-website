@@ -1,4 +1,6 @@
 class NoticesController < ApplicationController
+  layout "admin_application"
+  
   # GET /notices
   # GET /notices.json
   def index
