@@ -59,5 +59,7 @@ module SimpleWebiste
     config.generators do |g|
         g.template_engine :haml
     end
+    # devise settings
+     config.assets.initialize_on_precompile = false
   end
 end
