@@ -1,14 +1,15 @@
 %p#notice= notice
 
 %p
-  %b Title:
-  = @notice.title
+	%b= @notice.title
 %p
-  %b Content:
-  = @notice.content
+	%b Content:
+	= @notice.content
 %p
-  %b Category:
-  = @notice.category_id
+	%b Category:
+	= @notice.category.name
+%p
+	= image_tag @notice.image.url(:medium)
 
 = link_to 'Edit', edit_notice_path(@notice)
 \|

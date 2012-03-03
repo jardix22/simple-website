@@ -13,7 +13,7 @@
     %tr
       %td= notice.title
       %td= notice.content
-      %td= notice.category_id
+      %td= notice.category.name
       %td= link_to 'Show', notice
       %td= link_to 'Edit', edit_notice_path(notice)
       %td= link_to 'Destroy', notice, :confirm => 'Are you sure?', :method => :delete
