@@ -1,5 +1,7 @@
 SimpleWebiste::Application.routes.draw do
 
+  resources :documents
+
   resources :notices
 
   resources :categories
