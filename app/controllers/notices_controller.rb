@@ -1,5 +1,6 @@
 class NoticesController < ApplicationController
   before_filter :authenticate_user!
+  
   layout "admin_application"
 
   # GET /notices

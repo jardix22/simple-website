@@ -6,6 +6,9 @@
 %p
   %b Description:
   = @document.description
+%p
+  %b Document File:
+  = link_to @document.file_doc.name , @document.file_doc.url
 
 = link_to 'Edit', edit_document_path(@document)
 \|

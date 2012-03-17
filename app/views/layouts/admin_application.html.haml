@@ -18,7 +18,8 @@
 		%nav
 			%ul
 				%li= link_to "Admin", admin_path
-				%li= link_to "Category", categories_path
-				%li= link_to "Notice", notices_path
+				%li= link_to "Category #{ Category.count }", categories_path
+				%li= link_to "Notice #{ Notice.count }", notices_path
+				%li= link_to "Document #{ Document.count }", documents_path
 
 		= yield

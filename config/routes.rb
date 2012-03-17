@@ -1,9 +1,7 @@
 SimpleWebiste::Application.routes.draw do
 
   resources :documents
-
   resources :notices
-
   resources :categories
 
   devise_for :users,  :controllers => { :registrations => "users/registrations", :sessions => "users/sessions" }
